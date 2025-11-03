@@ -7,9 +7,8 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        border: "#e5e7eb",
-        primary: {
+              colors: {
+                borderColor: "hsl(var(--border))",        primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',
           200: '#bae6fd',
