@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --border: 220 13% 91%; /* A light gray HSL value */
+  }
+
   body {
     background-color: #fff; /* bg-white */
     color: #1a202c; /* text-gray-900 */
