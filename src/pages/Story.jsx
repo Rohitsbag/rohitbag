@@ -14,7 +14,7 @@ const Story = () => {
 
   const fetchStory = async () => {
     const { data, error } = await supabase
-      .from('life_story_sections')
+      .from('life_story')
       .select('*')
       .order('order_index', { ascending: true })
 
