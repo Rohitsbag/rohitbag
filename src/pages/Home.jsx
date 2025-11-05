@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Rocket, Brain, Heart, Target, Lightbulb, Users } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import RohitLogo from '../TigerRohitLOGO.svg'
 
 const Home = () => {
   const [heroRef, heroVisible] = useScrollReveal()
@@ -82,18 +83,9 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <motion.div
-              initial={{ scale: 0.9 }}
-              animate={heroVisible ? { scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="mb-8"
-            >
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 p-1">
-                <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
-                  <span className="text-5xl font-bold gradient-text">RB</span>
-                </div>
-              </div>
-            </motion.div>
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 p-1">
+              <img src={RohitLogo} alt="Rohit Bag Logo" className="w-full h-full rounded-full" />
+            </div>
 
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
               <span className="gradient-text">Rohit Bag</span>
