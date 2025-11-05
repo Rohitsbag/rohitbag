@@ -96,7 +96,7 @@ const Home = () => {
             </motion.div>
 
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
-              <span className="gradient-text">Rohit </span>
+              <span className="gradient-text">Rohit Bag</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4">
