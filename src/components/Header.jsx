@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../contexts/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
+import RohitLogo from '../TigerRohitLOGO.svg'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -45,7 +46,7 @@ const Header = () => {
             className="text-2xl font-display font-bold gradient-text"
             aria-label="Rohit Bag - Home"
           >
-            Rohit Bag
+            <img src={RohitLogo} alt="Rohit Bag Logo" className="h-8 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
